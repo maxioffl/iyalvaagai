@@ -4,6 +4,52 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+  //event dynamic code
+
+  var publicSpreadsheetUrl =  'https://docs.google.com/spreadsheets/d/1iV5AovKR1n0y_3W56R51xmR2Au4aIpcs2eHpkBfxVPs/pubhtml';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    for(let i = 0 ; i < data.length ; i++)
+    {
+      if(data[i].eventtype === "finished")
+      {
+      $("#day-1").append('<div class="row schedule-item">'+
+              '<div class="col-md-2"><time>'+data[i].eventdate+'</time></div>'+
+                '<div class="col-md-10">'+
+                  '<div class="speaker">'+
+                    '<img src="'+data[i].eventimage+'" alt="Brenden Legros">'+
+                  '</div>'+
+                  '<h4>'+data[i].eventnametamil+'<span></span></h4>'+
+                  '<p>'+data[i].eventtime+'</p>'+
+                '</div>'+
+                '</div>');
+      }
+      if(data[i].eventtype === "upcoming")
+      {
+      $("#day-2").append('<div class="row schedule-item">'+
+        '<div class="col-md-2"><time>'+data[i].eventdate+'</time></div>'+
+          '<div class="col-md-10">'+
+            '<div class="speaker">'+
+              '<img src="'+data[i].eventimage+'" alt="Brenden Legros">'+
+            '</div>'+
+            '<h4>'+data[i].eventnametamil+'<span></span></h4>'+
+            '<p>'+data[i].eventtime+'</p>'+
+          '</div>'+
+          '</div>');
+      }
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+
+
 !(function($) {
   "use strict";
 
@@ -15,6 +61,7 @@
       });
     }
   });
+
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
@@ -60,6 +107,7 @@
         }, 1500, 'easeInOutExpo');
       }
     }
+
   });
 
   // Mobile Navigation

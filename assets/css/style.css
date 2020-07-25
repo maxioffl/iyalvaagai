@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: none;
   color: #151515;
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") top center;
+  background: url("../img/bg-banner.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -437,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .icon-box {
-  padding: 30px 20px;
+  padding: 30px 5px;
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
@@ -532,7 +532,7 @@ section {
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -658,9 +658,10 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 80px 20px;
+  padding: 23px 50px;
   transition: all ease-in-out 0.3s;
   background: #fff;
+  width : 100%;
 }
 
 .services .icon-box .icon {
@@ -691,6 +692,7 @@ section {
 .services .icon-box h4 a {
   color: #151515;
   transition: ease-in-out 0.3s;
+  font-size : 14px;
 }
 
 .services .icon-box h4 a:hover {
@@ -956,7 +958,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("https://images.pexels.com/photos/247616/pexels-photo-247616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
+  background: url("../img/bg-testimonial.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1062,7 +1064,10 @@ section {
   background: #fff;
   padding: 60px 0;
 }
-
+#book-image{
+  width : 500px;
+  height : 350px;
+}
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
@@ -1088,20 +1093,20 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #151515;
+  color: white;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: 4px;
-  width: 36px;
+  width: 76px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(134, 184, 51);
   display: inline-block;
+  font-size: 18px;
   transition: ease-in-out 0.3s;
-  color: #86b833;
 }
 
 .team .member .social a:hover {
-  color: #fff;
+  color: white;
   background: #86b833;
 }
 
@@ -1116,7 +1121,7 @@ section {
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 16px;
   color: #151515;
 }
 
@@ -1128,8 +1133,8 @@ section {
 }
 
 .team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
+  text-align: right;
+  font-size: 16px;
   line-height: 26px;
   color: #777777;
 }
@@ -1163,13 +1168,13 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #151515;
 }
 
-.contact .info p {
+.contact .info p  {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
@@ -1424,6 +1429,127 @@ section {
     margin-top: 30px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #333333;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #86b833;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+  
+  
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  margin-bottom: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

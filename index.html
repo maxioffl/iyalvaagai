@@ -14,6 +14,8 @@
   <link href="assets/img/favicon.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -50,11 +52,20 @@
         <ul>
           <li class="active"><a href="#hero">முகப்பு <i class="icofont-home iconav"></i></a></li>
           <!-- <li><a href="#about">About</a></li> -->
-          <li><a href="#services">பணிகள் <i class="icofont-worker iconav"></i></a></li>
+          <li class="drop-down">
+            <a href="#services">செயல்பாடுகள் <i class="icofont-worker iconav"></i></a>
+            <ul>
+              <li><a href="#services1">துணிப்பை இயக்கம்</a></li>
+              <li><a href="#services2">உள் செயல்பாடுகள்</a></li>
+              <li><a href="#services3">நம்ம ஊரு சந்தை</a></li>
+              <li><a href="#services4">குழந்தைகள் நூலகம்</a></li>
+            </ul>
+          </li>
+          <li><a href="#schedule">நிகழ்வுகள் <i class="icofont-earth iconav"></i></a></li>
+
           <li><a href="#portfolio">புகைப்பட தொகுப்பு <i class="icofont-photobucket iconav"></i></a></li>
           <li><a href="#team">புத்தகங்கள் <i class="icofont-book-alt iconav"></i></a></li>
           <li><a href="#contact">தொடர்பு <i class="icofont-contacts iconav"></i></a></li>
-
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -70,39 +81,53 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
           <h1>இயல்வாகை</h1><br>
-          <h2>இயற்கை சார்ந்த ஈடுபாடுகள்</h2>
+          <h2>சூழலியல் இயக்கம்</h2><br>
         </div>
       </div>
 
-      <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4 col-6">
+      <div class="row mt-6 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-4">
           <div class="icon-box">
             <i class="ri-store-line"></i>
-            <h3><a href="">புத்தக கண்காட்சி</a></h3>
+            <h3><a>நம்ம ஊரு சந்தை</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4 col-6 ">
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">விதைகள் கண்காட்சி</a></h3>
+            <h3><a>குழந்தைகள் நூலகம்</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-4">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">தூர்வாரும் பணிகள்</a></h3>
+            <h3><a>இயல்வாகை பதிப்பகம்</a></h3>
           </div>
         </div>
-        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">நாட்டு விதைகள் விற்பனை</a></h3>
+            <h3><a>பாரம்பரிய விதை சேகரிப்பு மையம்</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a>விதை நாற்றுப்<br>பண்ணை</a></h3>
+          </div>
+        </div>
+         <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a>துணிப்பை இயக்கம்</a></h3>
           </div>
         </div>
       </div>
 
     </div>
   </section><!-- End Hero -->
+
+  <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -152,57 +177,224 @@
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Check our Services</p>
+        <div class="section-title" id="services1">
+          <h2>செயல்பாடுகள்</h2>
+          <br>
+          <p>துணிப்பை இயக்கம்</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">புத்தக கண்காட்சி</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="icofont-bag"></i></div>
+              <h4><a>துணிப்பை பயன்பாட்டை பரவலாக்குதல்</a></h4>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">விதைகள் கண்காட்சி</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="icofont-bag"></i></div>
+              <h4><a>நெகிழிக்கு மாற்றான பொருட்களை அறிமுகப்படுத்துதல்</a></h4>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">தூர்வாரும் பணிகள்</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="icofont-bag"></i></div>
+              <h4><a>துணிப்பைகளை தாம்பூலப்பைகளாக கொடுத்தல்</a></h4>
             </div>
           </div>
 
-        </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-bag"></i></div>
+              <h4><a>துணிப்பைகளை பரிசாக கொடுத்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-bag"></i></div>
+              <h4><a>நெகிழி பற்றியும், துணிப்பை பயன்பாட்டை பற்றியும் விழிப்புணர்வு ஏற்படுத்துதல்</a></h4>
+            </div>
+          </div>
+          </div>
+
+          <br><br>
+
+        <section class="section-title" id="services2">
+          <p>உள் செயல்பாடுகள்</p>
+        </section>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-workers-group"></i></i></div>
+              <h4><a>ஒருங்கிணைந்த பண்ணையம் அமைத்துக் கொடுத்தல், பயற்சி கொடுத்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-workers-group"></i></i></div>
+              <h4><a>காய்கறித்தோட்டம் மாடித்தோட்டம் அமைத்துக் கொடுத்தல், பயிற்சி அளித்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-workers-group"></i></div>
+              <h4><a>இயற்கை வழி விவசாய விழிப்புணர்வு ஏற்படுத்துதல்</a></h4>
+            </div>
+          </div>
+          </div>
+
+       <br><br>
+          
+        <section class="section-title" id="services3">
+          <p>நம்ம ஊரு சந்தை</p>
+        </section>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a>இயற்கை வழி விவசாயிகளை ஒன்றிணைத்து, அவர்களின் விளைப்பொருட்களுக்கான தளம் அமைத்துக் கொடுத்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a>நெகிழிக்கு மாற்றான packing பொருட்களை பயன்படுத்தி, விற்பனை செய்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a>உள்ளூரில் விளையும் பொருட்களை, உள்ளுரிலேயே விற்பனை செய்வதால், உள்ளூர் பொருளாதாரம் உயரும்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a>விவசாயிகளுக்கும், மக்களுக்குமான நேரடி களம் அமைத்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a>உள்ளூர் விவசாயி என்பதால் நேரடியாக விவசாயின் நிலத்தை பார்வையிடலாம்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-farmer"></i></div>
+              <h4><a> விளைபொருட்களின் உண்மைத்தன்மையும், நம்பகத்தன்மையும் உறுதிசெய்தல்</a></h4>
+            </div>
+          </div>
+          </div>
+
+       <br><br>
+          
+        <section class="section-title" id="services4">
+          <p>குழந்தைகள் நூலகம்</p>
+        </section>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-library"></i></div>
+              <h4><a>ஒவ்வொரு வாரமும் இலவச சிலம்ப பயற்சி, பறையிசை பயிற்சி</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-library"></i></div>
+              <h4><a>தேர்வு விடுமுறை நாட்கள், கோடைவிடுமுறை நாட்களில் "குழந்தைகளுக்கான பயில் முகாம் நடத்துதல்"</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-library"></i></div>
+              <h4><a>குழந்தைகளின் வீடுகளில் பள்ளிகளில் காய்கறித்தோட்டம், மாடித்தோட்டம் அமைத்துக் கொடுத்தல்</a></h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-library"></i></div>
+              <h4><a>உள்ளூர், மாவட்ட, மாநில, விளையாட்டுப் போட்டிகளில் பங்கேற்க தயார்படுத்துதல்</a></h4>
+            </div>
+          </div>
+          </div>
 
       </div>
     </section><!-- End Services Section -->
+
+
+    <!-- ======= Event Section ======= -->
+
+        <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>நிகழ்வுகளின் அட்டவணை</h2><br>
+          <p>அனைத்து நிகழ்வுகளின் அட்டவணை</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">நடைபெறவிருக்கும் நிகழ்வுகள்</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">முடிவுற்ற நிகழ்வுகள்</a>
+          </li>
+        </ul>
+
+        <!--<h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3>-->
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ======= End Event Section ====== -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Check our Gallery</p>
+          <h2>புகைப்பட தொகுப்பு</h2><br>
+          <p>அனைத்து புகைப்படங்களின் தொகுப்பு</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Newspaper clips</li>
-              <li data-filter=".filter-card">Nammalvar quotes</li>
-              <li data-filter=".filter-web">Events</li>
+              <li data-filter="*" class="filter-active">அனைத்தும்</li>
+              <li data-filter=".filter-app">செய்தித்தாள் வெளியீடுகள்</li>
+              <li data-filter=".filter-card">நம்மாழ்வார் கூற்று</li>
+              <li data-filter=".filter-web">நிகழ்வுகள்</li>
             </ul>
           </div>
         </div>
@@ -392,8 +584,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Books</h2>
-          <p>Check our Books</p>
+          <h2>புத்தகங்கள்</h2><br>
+          <p>எங்களிடம் உள்ள புத்தகங்கள்</p>
         </div>
 
         <div class="row">
@@ -401,17 +593,29 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/1.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 85</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>இனி விதைகளே பேராயுதம்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/2.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 140</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>வயிற்றுக்குச் சோறிடல் வேண்டும்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -419,17 +623,14 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/3.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 130</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>பூமித்தாயே</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -437,17 +638,14 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/4.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 50</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>விதையிலிருந்து துளிர்க்கும் மாறுதல்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -455,53 +653,30 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/5.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 100</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>தாய் மண்ணே வணக்கம்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
-              </div>
-            </div>
-          </div>
 
          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/6.jpeg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 40</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>எல்லா உயிரும் பசி தீர்க</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -509,17 +684,14 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/7.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 40</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>உயிர்ச் சூழல் பண்ணை வடிவமைப்பு</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -527,17 +699,314 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" class="img-fluid" alt="">
+                <img src="assets/img/books/8.jpg" id="book-image" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+                  <a>Rs. 25</a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Book Name</h4>
-                <span>Prize</span>
+                <h4>நோயினைக் கொண்டாடுவோம்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/9.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 25</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>இயற்கை வேளாண் அடிப்படை தேவைகள்</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/10.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 140</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>இயற்கைக்கு திரும்பும் பாதை</h4>
+                <span>- மசானபு ஃபுகோகா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/11.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 200</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>ஒற்றை வைக்கோல் புரட்சி</h4>
+                <span>- மசானபு ஃபுகோகா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/12.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 150</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>பாலைவனத்தில் விதை விதைப்பவன்</h4>
+                <span>- மசானபு ஃபுகோகா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/13.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 200</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>நிலைத்த பொருளாதாரம்</h4>
+                <span>- ஜே.சி.குமரப்பா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/14.jpeg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 120</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>தாய்மைப் பொருளாதாரம்</h4>
+                <span>- ஜே.சி.குமரப்பா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/15.jpeg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 40</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>கல்வியில் வேண்டும் புரட்சி</h4>
+                <span>- வினோபா</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/16.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 20</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>களவு போகும் கல்வி</h4>
+                <span>- மு.நியாஷ் அகமது</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/17.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 75</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>குழந்தை மனமும் அதன் மலர்ச்சியும்</h4>
+                <span>- பெ.தூரன்</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/18.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 125</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>நைதாலிம் புதுமைக்கல்வி</h4>
+                <span>- மார்ஜோர்ரி சைக்ஸ்</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/19.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 100</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>தமிழ் இயற்கை சார்ந்த வாழ்வியல்</h4>
+                <span>- தீ.கார்த்திக்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/20.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 75</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>மண்ணின் மரங்கள்</h4>
+                <span>- கார்த்திக், தமிழ்தாசன்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/21.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 100</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>பூமிக்கான பிரார்த்தனை</h4>
+                <span>- போப் பிரான்சிஸ்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/22.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 20</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>பால் ஒரு உயிர்க்கொல்லி</h4>
+                <span>- அன்பரசு சண்முகம்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/23.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 50</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>மனிதர்கள் மரங்கள் போல் வாழும் காலம் வரும்</h4>
+                <span>- கட்டுரைத் தொகுப்பு</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/24.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 65</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>கொக்குகளுக்காகவே வானம்</h4>
+                <span>- தியாக சேகர்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/25.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 100</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>பசுமை அரசியல்</h4>
+                <span>- சுப.உதயகுமார்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/26.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 20</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>கண்ணுக்கு தெரியாமல் களவு போகும் நீர்</h4>
+                <span>- நக்கீரன்</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/27.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 50</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>பனை உணவும் மருந்தும்</h4>
+                <span>- அழகேஸ்வரி</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/books/28.jpg" id="book-image" class="img-fluid" alt="">
+                <div class="social">
+                  <a>Rs. 55</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>ஏன் வேண்டும் இயற்கை உழவாண்மை</h4>
+                <span>- கோ.நம்மாழ்வார்</span>
               </div>
             </div>
           </div>
@@ -552,12 +1021,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <h2>தொடர்பு</h2><br>
+          <p>எங்களை தொடர்புகொள்ள</p>
         </div>
 
         <div>
-          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=coimbatore+(%E0%AE%87%E0%AE%AF%E0%AE%B2%E0%AF%8D%E0%AE%B5%E0%AE%BE%E0%AE%95%E0%AF%88)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=kathithamalai%20road,%20thirupur+(iyalvaagai)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
         </div>
 
         <div class="row mt-5">
@@ -566,20 +1035,27 @@
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>xxx</p>
+                <h4>இடம் :</h4>
+                <p>இயல்வாகை</p>
+                <p>சூழலியல் இயக்கம்</p>
+                <p>எண் 7, கதித்தமலை சாலை,</p>
+                <p>ஊத்துக்குளி - 638751</p>
+                <p>திருப்பூர் மாவட்டம்</p>
+
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>xxx@xxx.com</p>
+                <h4>மின்னஞ்சல் :</h4>
+                <p><a href="mailto:iyalvaagai@gmail.com">iyalvaagai@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>xxxxxxxxxx</p>
+                <h4>தொலைபேசி எண்கள் :</h4>
+                <p>
+                  <a href="tel:9942118080 ">9942118080 </a> - <a href="tel:9500125125">9500125125</a>
+                </p>
               </div>
 
             </div>
@@ -612,7 +1088,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">அனுப்புக</button></div>
             </form>
 
           </div>
@@ -633,12 +1109,15 @@
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h3>இயல்வாகை</h3>
-              <p>
-                Door no<br>
-                City, Country<br><br>
-                <strong>Phone:</strong> xxxxxxxxxx<br>
-                <strong>Email:</strong> xxx@xxx.com<br>
-              </p>
+                <p>சூழலியல் இயக்கம்</p>
+                <p>எண் 7, கதித்தமலை சாலை,</p>
+                <p>ஊத்துக்குளி - 638751</p>
+                <p>திருப்பூர் மாவட்டம்</p><br>
+                <strong>தொலைபேசி :</strong>       
+                <a href="tel:9942118080 ">9942118080 </a> - <a href="tel:9500125125">9500125125</a><br><br>
+                <strong>மின்னஞ்சல் :</strong>     
+                 <a href="mailto:iyalvaagai@gmail.com">iyalvaagai@gmail.com</a><br>
+    
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -650,22 +1129,22 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-                 <h4>Useful Links</h4>
+                 <h4>பயனுள்ள இணைப்புகள்</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">முகப்பு </a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">பணிகள் </a></li>
-			  <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">புகைப்பட தொகுப்பு </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">செயல்பாடுகள் </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#schedule">நிகழ்வுகள் </a></li>
+			        <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">புகைப்பட தொகுப்பு </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#team">புத்தகங்கள்</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">தொடர்பு </a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>எங்கள் செய்திமடல்</h4>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="அனுப்புக">
             </form>
 
           </div>
@@ -682,7 +1161,6 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
