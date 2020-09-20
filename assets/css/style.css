@@ -548,6 +548,19 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+.aboutush{
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  line-height: 39px;
+}
+
+.aboutusp{
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 39px;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
